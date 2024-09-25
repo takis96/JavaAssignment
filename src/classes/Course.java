@@ -40,4 +40,40 @@ public class Course {
     public void setCourseCode(String courseCode) {
         this.courseCode = courseCode;
     }
+
+    /**
+     * Gets the title of the course.
+     * 
+     * @return The title.
+     */
+    public String getTitle() {
+        return title;
+    }
+
+    /**
+     * Sets the title of the course.
+     * 
+     * @param title The new title.
+     */
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    /**
+     * Gets the semester of the course.
+     * 
+     * @return The semester.
+     */
+    public int getSemester() {
+        return semester;
+    }
+
+    /**
+     * Sets the semester of the course.
+     * 
+     * @param semester The new semester.
+     */
+    public void setSemester(int semester) {
+        this.semester = semester;
+    }
 }

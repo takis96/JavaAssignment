@@ -6,7 +6,19 @@ public class RecordManager {
     private Map<String, Course> courses = new HashMap<>();
     private List<Grade> grades = new ArrayList<>();
 
-    // Insert, update, and delete methods for students
+    // Insert, update, and delete methods for Proffesors
+    public void addProffesor(Professor professor) {
+        professors.put(professor.getProfessorId(), professor);
+    }
+
+    public void updateProffesor(String ProffesorId, Professor updatedProfessor) {
+        if (professors.containsKey(ProffesorId)) {
+            professors.put(ProffesorId, updatedProfessor);
+        } else {
+            System.out.println("Proffesor not found.");
+        }
+    }
+
     public void addStudent(Student student) {
         students.put(student.getStudentId(), student);
     }
